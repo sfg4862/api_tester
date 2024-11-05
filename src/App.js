@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
+    BrowserRouter as Router,
+    Routes,
+    Route, BrowserRouter,
 } from "react-router-dom";
 
 import Navbar from './components/Navbar';
@@ -12,6 +12,7 @@ import Test from './components/Test';
 
 function App() {
   return (
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Router>
         <Navbar/>
         <div className="container">
@@ -21,6 +22,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      </BrowserRouter>
   )
 }
 
