@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -f"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +39,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://sfg4862.github.io/api_tester"
+  "homepage": "",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
